@@ -235,31 +235,6 @@ export function FormPlayer({ form }: FormPlayerProps) {
           >
             {form.thank_you_message}
           </h1>
-          <p 
-            className="text-lg opacity-70"
-            style={{ color: theme.textColor }}
-          >
-            Your response has been recorded.
-          </p>
-          
-          {/* OpenForm branding */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="mt-12"
-          >
-            <a 
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm opacity-50 hover:opacity-70 transition-opacity"
-              style={{ color: theme.textColor }}
-            >
-              <span>Made with</span>
-              <span className="font-semibold">OpenForm</span>
-            </a>
-          </motion.div>
         </motion.div>
       </div>
     )
