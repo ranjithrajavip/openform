@@ -462,43 +462,7 @@ export function FormPlayer({ form }: FormPlayerProps) {
           </AnimatePresence>
         </div>
       </main>
-
-      {/* Navigation footer */}
-      <footer className="fixed bottom-0 left-0 right-0 p-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={goToPrevious}
-            disabled={isFirstQuestion}
-            className="h-10 w-10 p-0"
-            style={{ color: theme.textColor }}
-          >
-            <ChevronUp className="w-5 h-5" />
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => goToNext()}
-            disabled={isSubmitting}
-            className="h-10 w-10 p-0"
-            style={{ color: theme.textColor }}
-          >
-            <ChevronDown className="w-5 h-5" />
-          </Button>
-        </div>
-
-        {/* OpenForm branding */}
-        <a 
-          href="/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm opacity-50 hover:opacity-70 transition-opacity"
-          style={{ color: theme.textColor }}
-        >
-          Powered by <span className="font-semibold">OpenForm</span>
-        </a>
-      </footer>
+      
     </div>
   )
 }
