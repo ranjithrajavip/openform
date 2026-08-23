@@ -28,11 +28,6 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "OpenForm - Create Beautiful Forms",
-  description: "Build stunning, TypeForm-style forms in minutes. Free and open source.",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
