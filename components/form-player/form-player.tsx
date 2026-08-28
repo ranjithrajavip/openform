@@ -425,13 +425,6 @@ export function FormPlayer({ form }: FormPlayerProps) {
                     </>
                   )}
                 </Button>
-
-                <span 
-                  className="text-sm opacity-50"
-                  style={{ color: theme.textColor }}
-                >
-                  press <kbd className="font-mono font-medium">Enter ↵</kbd>
-                </span>
               </motion.div>
             </motion.div>
           </AnimatePresence>
